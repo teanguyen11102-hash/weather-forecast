@@ -9,7 +9,7 @@ function findHighestTemp(arr) {
             highestTemp = temp;
         }
     }
-    console.log("highest temp is:", highestTemp);
+    console.log("Highest temp is:", highestTemp);
 }
 
 
@@ -20,7 +20,7 @@ function findLowestTemp(arr) {
         if (lowestTemp > temp) {
             lowestTemp = temp;
         }
-    } console.log(`lowest temperature is: ${lowestTemp}`)
+    } console.log(`Lowest temperature is: ${lowestTemp}`)
 }
 
 //function: find the average temperature
@@ -30,8 +30,8 @@ function findAverageTemp(arr) {
     for (let temp of arr) {
         sumTemp += temp;
     }
-    let averageTemp = sumTemp / (arr.length)
-    console.log(`average temperature is: ${averageTemp}`);
+    let averageTemp = (sumTemp / (arr.length)).toFixed(1)
+    console.log(`Average temperature is: ${averageTemp}`);
 
 }
 
@@ -43,11 +43,11 @@ function findAverageTemp(arr) {
     let midIndex = Math.floor(arr.length/ 2); 
     let medianTemp;
     if (arr.length % 2 === 0) {
-        medianTemp = (arr[midIndex] + arr[midIndex - 1])/2
+        medianTemp = ((arr[midIndex] + arr[midIndex - 1])/2).toFixed(1)
     } else{
-        medianTemp =  arr[midIndex];
+        medianTemp =  arr[midIndex]
     }
-    console.log(`Median of ${arr} is ${medianTemp}`)
+    console.log(`Median is ${medianTemp}`)
  }
 
  //executive:
